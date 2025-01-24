@@ -10,11 +10,11 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         loop = n / 2
-        startx, starty = 0, 0
-        count = 1
-        offSet = 1
-        mid = n / 2
-        res = [[0 for _ in range(n)] for _ in range(n)]
+        startx, starty = 0, 0 # starting point
+        count = 1 
+        offSet = 1 # each loop Offset += 1
+        mid = n / 2 
+        res = [[0 for _ in range(n)] for _ in range(n)] 
         while loop:
             i = startx
             j = starty
