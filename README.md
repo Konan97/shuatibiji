@@ -1,2 +1,2 @@
 # shuatibiji
-69 days of self improvement
+69 days of leetcode practice and self-improvement
