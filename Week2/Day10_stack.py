@@ -62,8 +62,3 @@ class MyStack(object):
 
 # 1047 Remove all adjacent duplicates in string
 # use stack to cancel out duplicates
-
-# 150 Evaluate reverse Polish Notation
-# use stack
-# careful with - and /
-# return int(num2 / num1) if num2 * num1 > 0 else -(abs(num2) // abs(num1))
