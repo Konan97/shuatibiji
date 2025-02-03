@@ -1,8 +1,8 @@
 # 1 two sum
 
-# 454 
+# 454 4sumII
 
-# 383
+# 383 Ransom Note
 # use hashMap
 
 # 15 3Sum
