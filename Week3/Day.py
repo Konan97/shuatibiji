@@ -1,6 +1,10 @@
+# recursive function
+# 1. determine return type 2. set stop condition 3. write single action
 # 144 Binary Tree Preorder Traversal
 # recursive
 # 中左右
+# 589 N-ary Tree Preorder Traversal
+
 
 # 145 Postorder Traversal
 # 左右中
@@ -26,3 +30,16 @@ class Solution(object):
         self.postTra(root.left, res)
         self.postTra(root.right, res)
         res.append(root.val)
+
+# 226 Invert Binary Tree
+class Solution(object):
+    def invertTree(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: Optional[TreeNode]
+        """
+        if not root: return None
+        root.left, root.right = root.right, root.left
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+        return root
