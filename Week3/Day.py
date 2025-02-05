@@ -43,3 +43,8 @@ class Solution(object):
         self.invertTree(root.left)
         self.invertTree(root.right)
         return root
+
+# 101 Symmetric Tree
+# return type boolean
+# stop conditions
+# single actions: left.left = right.right ....
