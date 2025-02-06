@@ -48,3 +48,6 @@ class Solution(object):
 # return type boolean
 # stop conditions
 # single actions: left.left = right.right ....
+
+# 104 Max depth of Binary Tree
+# 1 + max(left, right)
