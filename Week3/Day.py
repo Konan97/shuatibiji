@@ -26,3 +26,6 @@ class Solution(object):
         self.postTra(root.left, res)
         self.postTra(root.right, res)
         res.append(root.val)
+    
+# 94 Binary Tree Inorder Traversal
+# 左中右
