@@ -54,3 +54,8 @@ class Solution(object):
 
 # 104 Max depth of Binary Tree
 # 1 + max(left, right)
+
+# 111 Minimum Depth of Binary Tree
+# leaf node is both left and right are none
+
+# 222 Count Complete Tree Nodes
