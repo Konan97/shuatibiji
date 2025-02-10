@@ -65,4 +65,9 @@ class Solution(object):
 # 700 Search in a Binary Search Tree
 # if not root or root.val == val return root
 
+# 98 Validate Binary Search Tree
+# inorder traversal BST gives a sorted array
+# 左中右
 
+# 530 Minimum absolute Difference in BST
+# inorder traversal find min diff

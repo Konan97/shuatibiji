@@ -41,15 +41,17 @@ class Solution(object):
         if not root:
             return 0
 
-        left = self.sumOfLeftLeaves(root.left)
+        left = self.sumOfLeftLeaves(root.left) # left
         # find left leaves
         if root.left and not root.left.left and not root.left.right:
             left = root.left.val
-        right = self.sumOfLeftLeaves(root.right)
+        right = self.sumOfLeftLeaves(root.right) # right
+        sum = left + right # mid
+        return sum
 
-        return left + right
+# 513 Find Bottom Left Tree Value
+# level traversal 
 
-        
 # 112 Path Sum
 # more practice
 # Definition for a binary tree node.
