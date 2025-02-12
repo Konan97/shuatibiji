@@ -8,3 +8,6 @@
 '''left = traversal(root.left)
    right = traversal(root.right)
    return left .... right'''
+# 如果left 和 right都不为空，说明此时root就是最近公共节点。这个比较好理解
+# 如果left为空，right不为空，就返回right，说明目标节点是通过right返回的，反之依然。
+# postorder traversal
