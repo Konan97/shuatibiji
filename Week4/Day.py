@@ -55,3 +55,5 @@ class Solution(object):
         root.left = self.deleteNode(root.left, key)
         root.right = self.deleteNode(root.right, key)
         return root
+    
+# 669 Trim a Binary Search Tree
