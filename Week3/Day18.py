@@ -16,5 +16,3 @@
 # 如果left为空，right不为空，就返回right，说明目标节点是通过right返回的，反之依然。
 # postorder traversal
 
-# 235 Lowest Common Ancestor of a Binary Search Tree
-#
