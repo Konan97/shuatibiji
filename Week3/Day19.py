@@ -1,3 +1,4 @@
+# Binary Tree part 7
 # 235 Lowest Common Ancestor of a Binary Search Tree
 #
 # 701 Insert into a Binary Search Tree
@@ -57,5 +58,3 @@ class Solution(object):
         root.left = self.deleteNode(root.left, key)
         root.right = self.deleteNode(root.right, key)
         return root
-    
-# 669 Trim a Binary Search Tree
