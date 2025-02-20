@@ -46,5 +46,5 @@ class Solution(object):
 # combine 78 frame and 40 filter
 # if i > 0 and nums[i] == nums[i-1] and used[i-1] == 0:
 #      continue
-# used[i - 1] == true，说明同一树枝candidates[i - 1]使用过
-# used[i - 1] == false，说明同一树层candidates[i - 1]使用过
+# used[i - 1] == 1，说明同一树枝candidates[i - 1]使用过
+# used[i - 1] == 0，说明同一树层candidates[i - 1]使用过
