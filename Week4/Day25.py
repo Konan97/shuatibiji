@@ -7,4 +7,7 @@
 # remove duplicate on one branch
 # no need for startIndex
 
-# 
+# 47 Permutation II 
+# Video helps more practice
+# 数层去重
+ 
