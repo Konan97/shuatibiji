@@ -23,3 +23,6 @@ def findLengthOfLCIS(self, nums):
                 dp[i] = dp[i-1]+1
         
         return max(dp)
+
+# 718 Maximum length of Repeated Subarray
+# 
