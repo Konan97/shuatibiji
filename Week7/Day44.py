@@ -9,3 +9,5 @@
 # 1035 Uncrossed Lines
 # same as 1143
 
+# 53 Maximum Subarray
+# dp[i] = max(dp[i-1]+nums[i], nums[is])
