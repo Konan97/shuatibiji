@@ -11,3 +11,6 @@
 
 # 53 Maximum Subarray
 # dp[i] = max(dp[i-1]+nums[i], nums[is])
+
+# 392 Is Subsequence
+# same as 1143
