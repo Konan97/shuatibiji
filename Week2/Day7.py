@@ -1,4 +1,23 @@
 # 1 two sum
+# 1010 Pairs of Songs with total durations divisible by 60
+class Solution(object):
+    def numPairsDivisibleBy60(self, time):
+        """
+        :type time: List[int]
+        :rtype: int
+        """
+        # n^2 will exceed time limit
+        # map 存放遍历过的元素
+        freq_dict = defaultdict(int)
+        output = 0
+        for t in time:
+            com = 60 - t%60
+            if t%60 == 0:
+                com = 0
+            output += freq_dict[com]
+            freq_dict[t%60] += 1
+        # print(freq_dict)
+        return output
 
 # 454 4sumII
 
