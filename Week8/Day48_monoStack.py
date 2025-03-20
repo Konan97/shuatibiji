@@ -32,4 +32,33 @@ class Solution(object):
         return volume
 
 
-
+# 84 Largest Rectangle in Histogram
+# 头尾加0 单调减
+class Solution(object):
+    def largestRectangleArea(self, heights):
+        """
+        :type heights: List[int]
+        :rtype: int
+        """
+        heights.insert(0, 0)
+        heights.append(0)
+        monoStack = []
+        monoStack.append(0)
+        largest = 0
+        for i in range(1, len(heights)):
+            if heights[i] > heights[monoStack[-1]]:
+                monoStack.append(i)
+            elif heights[i] == heights[monoStack[-1]]:
+                monoStack.pop()
+                monoStack.append(i)
+            else:
+                while monoStack and heights[monoStack[-1]] > heights[i]:
+                    mid = monoStack[-1]
+                    monoStack.pop()
+                    if monoStack:
+                        h = heights[mid]
+                        w = i - monoStack[-1] - 1
+                        # print(h, w)
+                        largest = max(largest, h*w)
+                monoStack.append(i)
+        return largest
