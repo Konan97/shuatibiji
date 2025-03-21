@@ -1,6 +1,3 @@
-# 797 All Paths From Source to Target
-# dfs use recursion and backtracking
-
 # 463 Island Perimeter
 # land*4-neighbor*2
 
