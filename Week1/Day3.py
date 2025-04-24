@@ -1,6 +1,9 @@
-# 203. use dummy node return dummy.next
+# 203. Remove Linked List Elements
+# use dummy node return dummy.next
+# 二刷
 
-# 707. curr.next = ListNode(val, curr.next)
+# 707. Design Linked List
+# curr.next = ListNode(val, curr.next)
 # addAtIndex 注意区间 多练习
 class ListNode(object):
 
@@ -95,9 +98,11 @@ class MyLinkedList(object):
 # obj.addAtIndex(index,val)
 # obj.deleteAtIndex(index)
 
-# 206. two cursors
-# pre -> cur -> next
+# 206. Reverse Linked List
+# two cursors
+# pre -> cur
 # save curr.next as tmp
 # pre <- cur
 # pre move to cur
 # cur move to tmp
+# 二刷
