@@ -1,14 +1,19 @@
-# 24 dummy 
+# 24 Swap Nodes in Pairs
+# dummy 
 # cur -> 1 -> 2 -> 3
 # step1 cur -> 2
 # step2 2 -> 1
 # step3 1 -> 3
-# step4 cur move 2 
+# step4 cur move 2 steps cur = cur.next.next
 # 画图
+# 二刷
 
-# 19 fast, slow, dummy pointers 
+# 19 Remove Nth Node from End of List
+# fast, slow, dummy pointers 
 # two steps
 # 不难 但是loop要小心
+# fast 先走 n 步 然后slow 走
+# 二刷
 
 # 142 
 # fast = x + n(y + z) + y

@@ -3,6 +3,7 @@
 # 二刷
 
 # 707. Design Linked List
+# 二刷
 # curr.next = ListNode(val, curr.next)
 # addAtIndex 注意区间 多练习
 class ListNode(object):
