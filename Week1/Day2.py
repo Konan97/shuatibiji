@@ -47,5 +47,8 @@ class Solution(object):
             res[mid][mid] = count
         return res
         
-
+# 289. Game of Life
+# 2D array
+# dead cell: 1 -> -1
+# live cell: 0 -> 2
         
