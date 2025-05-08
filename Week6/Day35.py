@@ -1,4 +1,5 @@
 # 01 背包 2D
+# dp[i][j]
 # 01 背包 1D
 
 # 416 Partition equal subset sum
