@@ -1,6 +1,7 @@
 # 1049 Last Stone Weight
 # same as 416
 # make stones reach sum/2
+# 二刷
 
 
 # 494 Target Sum
