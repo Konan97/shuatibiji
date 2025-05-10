@@ -5,13 +5,20 @@
 
 
 # 494 Target Sum
+# left + right = sum
+# left - right = target
+# 背包: left = (target + sum)/2
+# 初始化 if left == 0: then none of number is positve : 1 combination
+# dp[0] = 1
 # 找背包组合
 # more practice
 # dp[j] += dp[j-nums[i]]
+# 二刷
 
 # 474 Ones and Zeros
 # 2D backpack of ones and zeros
 # not easy
+# 二刷
 class Solution(object):
     def findMaxForm(self, strs, m, n):
         dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
