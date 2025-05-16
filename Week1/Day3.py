@@ -107,3 +107,16 @@ class MyLinkedList(object):
 # pre move to cur
 # cur move to tmp
 # 二刷
+# recursion
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or not head.next:
+            return head
+        h = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return h
