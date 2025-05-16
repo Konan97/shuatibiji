@@ -6,7 +6,28 @@
 # step3 1 -> 3
 # step4 cur move 2 steps cur = cur.next.next
 # 画图
-# 二刷
+# recursion is easier
+class Solution(object):
+    def swapPairs(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        return self.recursion(head)
+        
+    
+    def recursion(self, head):
+        if not head or not head.next:
+            return head
+        
+        first = head
+        second = head.next
+
+        first.next = self.recursion(second.next)
+        second.next = first
+
+        return second
+# 三刷
 
 # 19 Remove Nth Node from End of List
 # fast, slow, dummy pointers 
