@@ -116,7 +116,7 @@ class Solution(object):
         """
         if not head or not head.next:
             return head
-        h = self.reverseList(head.next)
+        h = self.reverseList(head.next) # head of reversed list
         head.next.next = head
-        head.next = None
+        head.next = None # end of list
         return h
