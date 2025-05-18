@@ -4,8 +4,22 @@
 
 # 518 Coin Change II
 # 物品
-# 背包 正叙
-# dp[i] += dp[i-c]
+# 背包 正序
+# dp[j] += dp[j-coins[i]]
+# 完全背包的两个for循环的先后顺序都是可以的, 但是排列组合问题不一样了
+# combination
+# [1, 1, 1, 1, 1, 1]
+[1, 1, 2, 2, 3, 3]
+[1, 1, 2, 2, 3, 4]
+# permutation
+[1, 0, 0, 0, 0, 0]
+[1, 1, 0, 0, 0, 0]
+[1, 1, 2, 0, 0, 0]
+[1, 1, 2, 3, 0, 0]
+[1, 1, 2, 3, 5, 0]
+[1, 1, 2, 3, 5, 9]
+# 二刷
 
-# 377 Combinbation Sum IV
+# 377 Combinbation Sum IV (permutation)
 # like 518 but 背包 then 物品
+# 二刷

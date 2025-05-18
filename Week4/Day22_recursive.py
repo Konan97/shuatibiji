@@ -1,4 +1,4 @@
-# BackTrack
+# Recursive BackTrack
 # used for brute force search
 # a "combination" the order of the items doesn't matter, 
 # while a "permutation" the order of the items does matter
