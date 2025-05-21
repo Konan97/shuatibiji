@@ -46,5 +46,8 @@ class Solution(object):
 # obstacle remove possibilities from one side
 
 # 343 Integer Break
+# dp[2] = 1
 # max(dp[i-j]*j, (i-j)*j, dp[i])
+# 二刷
+
 
