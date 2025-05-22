@@ -1,5 +1,7 @@
 # recursive function
 # 1. determine return type 2. set stop condition 3. write single action
+# traversal Binary Tree O(n) average
+# search, insert, delete O(logn) average
 # 144 Binary Tree Preorder Traversal
 # recursive
 # 中左右
