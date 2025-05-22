@@ -3,6 +3,7 @@
 # 144 Binary Tree Preorder Traversal
 # recursive
 # 中左右
+# 二刷
 # 589 N-ary Tree Preorder Traversal
 
 
