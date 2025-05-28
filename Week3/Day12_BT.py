@@ -6,8 +6,11 @@
 # recursive
 # 中左右
 # 二刷
-# 589 N-ary Tree Preorder Traversal
 
+
+# 589 N-ary Tree Preorder Traversal
+# recursive 二刷
+# iterative DFS
 
 # 145 Postorder Traversal
 # 左右中
