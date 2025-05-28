@@ -10,3 +10,7 @@
 # reverse inorder traversal
 # pre and cur (use global pre to save the previous node.val)
 
+
+# Tries
+# 648 Replace Words
+# construct TrieNode, Trie
