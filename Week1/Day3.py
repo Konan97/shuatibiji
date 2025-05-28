@@ -120,3 +120,6 @@ class Solution(object):
         head.next.next = head
         head.next = None # end of list
         return h
+    
+# 328. Odd Even Linked List
+# 画图
