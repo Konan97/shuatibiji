@@ -43,3 +43,8 @@ class Solution(object):
 # 推到数学公式 得出 x = z
 # 或者集合法 set() 简直作弊😂
 # 二刷 set做的
+
+# 234 Palindrome Linked List
+# fast, slow to get the second half
+# reverse the second half
+# traversal
