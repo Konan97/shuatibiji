@@ -34,3 +34,9 @@ if __name__ == '__main__':
 
 
 # 99 bfs 加入列队立刻标记visited
+
+# 100 max area of island
+
+
+# 286 Walls and Gates
+# start from Gates at the same time

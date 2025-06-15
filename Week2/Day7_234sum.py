@@ -26,7 +26,8 @@ class Solution(object):
 
 # 15 3Sum
 # use two pointers
-# a去重, 去重逻辑应该放在找到一个三元组之后，对b 和 c去重
+# a去重, 去重逻辑应该放在找到一个三元组之后，对b 和 
+# 二刷
 class Solution(object):
     def threeSum(self, nums):
         """
