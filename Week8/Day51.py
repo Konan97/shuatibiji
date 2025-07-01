@@ -77,3 +77,6 @@ if __name__ == '__main__':
 
 # 286 Walls and Gates
 # start from Gates at the same time
+
+# 752 Open the Lock
+# BFS guarantees the shortest path in an unweighted graph, so as soon as we find an answer, we know it is the optimal one.
