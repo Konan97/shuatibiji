@@ -1,5 +1,7 @@
 # 739 Daily Temperatures
 # use monotonic stack to save index
+# {temperature: index}
+# 二刷
 
 
 # 496 Next Greater Element 1
