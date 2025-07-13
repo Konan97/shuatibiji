@@ -40,6 +40,30 @@ class Solution(object):
             count += root.right.val
         return False
 
+# 124 Binary Tree Maximum Path Sum
+# more practice
+class Solution(object):
+    def maxPathSum(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: int
+        """
+        self.max_val = float('-inf')
+
+        # post order
+        def maxPath(node):
+            if not node:
+                return 0
+            
+            left_val = max(maxPath(node.left), 0)
+            right_val = max(maxPath(node.right), 0)
+
+            self.max_val = max(self.max_val, left_val + right_val + node.val)
+
+            return max(left_val + node.val, right_val + node.val)
+
+        maxPath(root)
+        return self.max_val
         
 # 106 Construct Binary Tree from Inorder and postorder traversal
 # a very good problem need more practice
