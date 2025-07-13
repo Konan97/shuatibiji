@@ -78,5 +78,46 @@ if __name__ == '__main__':
 # 286 Walls and Gates
 # start from Gates at the same time
 
+# 542 01 Matrix
+# start bfs from 0 at the same time
+class Solution(object):
+    def updateMatrix(self, mat):
+        """
+        :type mat: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        row, col = len(mat), len(mat[0])
+        mat_copy = [line[:] for line in mat]
+        queue = []
+        visited = set()
+        for i in range(row):
+            for j in range(col):
+                if mat[i][j] == 0:
+                    queue.append((i, j, 0))
+                    visited.add((i, j))
+        
+        
+        directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+        distance = 0
+        while queue:
+            length = len(queue)
+            distance += 1
+            for i in range(length):
+                root = queue.pop(0)
+                X, Y, distance = root[0], root[1], root[2]
+                for d in directions:
+                    newX = X + d[0]
+                    newY = Y + d[1]
+                    if newX < 0 or newX >= row or newY < 0 or newY >= col:
+                        continue
+                    
+                    if (newX, newY) not in visited:
+                        queue.append((newX, newY, distance+1))
+                        visited.add((newX, newY))
+                        mat_copy[newX][newY] = distance + 1
+                    
+        return mat_copy
+
+        
 # 752 Open the Lock
 # BFS guarantees the shortest path in an unweighted graph, so as soon as we find an answer, we know it is the optimal one.
