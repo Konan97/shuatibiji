@@ -42,6 +42,42 @@ class Solution(object):
             self.backTrack(digits, i + 1, phone, path, res)
             path.pop()
 
+# 425 Word Squares
+# backTrack as the backbone
+class Solution(object):
+    def wordSquares(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[List[str]]
+        """
+        res = []
+        path = []
+        preMap = self.prefixTable(words)
+        for w in words:
+            path = [w]
+            self.backTrack(words, path, res, preMap)
+        return res
 
+    def prefixTable(self, words):
+        preMap = defaultdict(set)
+        for w in words:
+            for i in range(1, len(w)):
+                preMap[w[:i]].add(w)
+        return preMap
+        
+    def backTrack(self, words, path, res, preMap):
+
+        # stop condition
+        if len(path) == len(words[0]):
+            res.append(path[:])
+            return
+        prefix = "".join([p[len(path)] for p in path])
+        for w in preMap[prefix]:
+            # verify
+            path.append(w)
+            self.backTrack(words, path, res, preMap)
+            path.pop()
+    
+    
 
 
