@@ -125,3 +125,46 @@ class Solution(object):
 
 # 841 Keys and Rooms
 # BFS
+
+# 127 Word ladder
+# BFS
+class Solution(object):
+    def ladderLength(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        # hit -xit -hxt -hix
+        # -x
+        adjList = defaultdict(set)
+        for i in range(len(beginWord)):
+            for w in wordList:
+                # print(beginWord[0:i], beginWord[i+1:], w[0:i], w[i+1:])
+                adjList[w[0:i] + "*" + w[i+1:]].add(w)
+        # print(adjList)
+        # bfs
+        return self.bfs(adjList, beginWord, endWord)
+
+    def bfs(self, adjList, beginWord, endWord):
+        queue = []
+        queue.append((beginWord, 0))
+        visited = set()
+        visited.add(beginWord)
+        distance = 0
+        while queue:
+            length = len(queue)
+            
+            node, distance = queue.pop(0)
+            if node == endWord:
+                return distance + 1
+            for j in range(len(node)):
+                tmp = node[0:j] + "*" + node[j+1:]
+                if tmp in adjList:
+                    for w in adjList[tmp]:
+                        if w not in visited:
+                            queue.append((w, distance + 1))
+                            visited.add(w)
+                            
+        return 0
