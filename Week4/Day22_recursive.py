@@ -78,6 +78,9 @@ class Solution(object):
             self.backTrack(words, path, res, preMap)
             path.pop()
     
-    
+# 247 Strobogrammatic Number II
+# recursion
 
+# 22 Generate Parentheses
+# backTrack
 
