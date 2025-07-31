@@ -50,5 +50,6 @@ class Solution(object):
 # traversal
 
 # 2 Add Two Numbers
+# 二刷无压力
 # 61 Rotate List
 # Link then traverse length - length%k - 1 then break 
