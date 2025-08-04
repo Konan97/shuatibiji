@@ -51,4 +51,30 @@ class Solution(object):
 # 2D array
 # dead cell: 1 -> -1
 # live cell: 0 -> 2
-        
+
+# 1428 Leftmost Column with at least a One
+# binary search on each row
+# 
+
+# 48 rotate image
+
+class Solution(object):
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: None Do not return anything, modify matrix in-place instead.
+        """
+        # rotate in a group of four
+        # [0,0][0,1][0,2][0,3]
+        # [1,0][1,1][1,2][1,3]
+        # [2,0][2,1][2,2][2,3]
+        # [3,0][3,1][3,2][3,3]
+
+        n = len(matrix)
+        for i in range(n/2+n%2):
+            for j in range(n/2):
+                temp = matrix[i][j]
+                matrix[i][j] = matrix[n-1-j][i]
+                matrix[n-1-j][i] = matrix[n-1-i][n-1-j]
+                matrix[n-1-i][n-1-j] = matrix[j][n-1-i]
+                matrix[j][n-1-i] = temp
